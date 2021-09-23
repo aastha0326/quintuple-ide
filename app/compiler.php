@@ -8,11 +8,12 @@
     fwrite($programFile, $code);
     fclose($programFile);
     if($language == "php") {
-        $output = shell_exec("D:\Downloads\php-8.0.10-Win32-vs16-x64 (1)\php.exe $filePath 2>&1");
+        #$output = shell_exec("D:\\Downloads\\\"php-8.0.10-Win32-vs16-x64 (1)\"\php.exe $filePath 2>&1");
+        $output = shell_exec("php.exe $filePath 2>&1");
         echo $output;
     }
     if($language == "python") {
-        $output = shell_exec("C:\Program Files\python\Python39\python.exe $filePath 2>&1");
+        $output = shell_exec("C:\\\"Program Files\"\python\Python39\python.exe $filePath 2>&1");
         echo $output;
     }
     if($language == "node") {
