@@ -1,20 +1,25 @@
-*{margin: 0;}
-
+*{
+    margin: 0;
+    font-family: 'Andada Pro', serif;
+}
+body{
+    background-color: lightgray;
+}
 .header {
     background: #57a958;
-    text-align: left;
+    text-align: center;
     font-size: 20px;
     font-weight: bold;
     color: white;
     padding: 4px;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
 }
 
 .control-panel {
     background: lightgray;
     text-align: right;
     padding: 4px;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
 }
 
 .languages {
@@ -22,7 +27,9 @@
     border: 1px solid gray;
 }
 
-#editor { height: 400px; }
+#editor { 
+    height: 400px; 
+}
 
 .button-container {
     text-align: right;
@@ -33,14 +40,32 @@
     background: #57a958;
     color: white;
     padding: 8px;
-    border: 0;
+    margin-right: 5px;
+    border: 1px solid #336333;
+    border-radius: 5px;
 }
 
 .output {
-        padding: 4px;
         border: 2px solid gray;
-        min-height: 100px;
+        min-height: 130px;
         width: 99%;
+        margin-left: 2px;
         resize: none;
-
+        border-radius: 5px;
+        background-color: #282b28;
+        color: white;
 } 
+
+.output .output-options{
+    width: inherit;
+    height: 12px;
+}
+.output .output-list{
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    font-size: 12px;
+}
+.output .output-list li{
+    padding: 0px 5px;
+}
