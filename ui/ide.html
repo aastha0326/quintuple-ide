@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>QUINTUPLE Online IDE</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -15,6 +18,9 @@
         <select id="languages" class="languages" onchange="changeLanguage()">
             <option value="c"> C </option>
             <option value="cpp"> C++ </option>
+            <option value="c#"> C# </option>
+            <option value="java"> Java </option>
+            <option value="js"> JavaScript </option>
             <option value="php"> PHP </option>
             <option value="python"> Python </option>
             <option value="node"> Node JS </option>
@@ -26,7 +32,17 @@
         <button class="btn" onclick="executeCode()"> Run </button>
     </div>
 
-    <div class="output"></div>
+    <div class="output">
+        <div class="output-options">
+            <ul class="output-list">
+                <li>Problems</li>
+                <li>Output</li>
+                <li>Debug Console</li>
+                <li>Terminal</li>
+            </ul>
+        </div>
+        <hr>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/lib/ace.js"></script>
